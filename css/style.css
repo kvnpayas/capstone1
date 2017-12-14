@@ -32,8 +32,6 @@
 
 	.indexCont {
 		width: 50%;
-		/*margin: 0 auto;*/
-		/*border: 3px solid black;*/
 		position: absolute;
 		top: 25%;
 		left: 25%;
@@ -41,6 +39,10 @@
 		background-color: rgba(239, 226, 186, 0.85);
 		border-radius: 10%;
 		padding: 20px;
+	}
+
+	.indexCont:hover {
+		box-shadow: -20px 5px 40px 10px #4056a1, 20px -5px 40px 10px #f13c20;
 	}
 
 		.indexCont > h1 {
@@ -94,7 +96,6 @@
 	@media only screen and (max-width: 568px){
 		.indexCont {
 			width: 70%;
-			/*height: 50%;*/
 			margin: 0 auto;
 			left: 17%;
 			font-size: 63%;
@@ -107,7 +108,6 @@
 
 		.indexCont {
 			width: 70%;
-			/*height: 40%;*/
 			margin: 0 auto;
 			left: 17%;
 		}
@@ -124,8 +124,6 @@
 		height: 100vh;
 	}
 	.wrapper {
-		/*background-color: grey;*/
-		/*height: 100%;*/
 		width: 100%;
 		padding: 1%;
 
@@ -133,20 +131,16 @@
 
 	.content {
 		width: 90%;
-		/*height: 100%;*/
-		/*border: 1px solid black;*/
 		margin: 40px auto;
 		padding: 1%;
 		background-color: rgba(255, 255, 255, 0.85);
 		border-radius: 2%;
+		box-shadow: -20px 5px 40px 10px #efe2ba;
 	}
 
 	.homeImage {
 		width: 50%;
-		/*height: 100%;*/
-		/*border: 1px solid white;*/
 		float: left;
-		/*background-color: rgba(255, 255, 255, 0.85);*/
 
 	}
 
@@ -220,11 +214,8 @@
 
 	.intro {
 		width: 50%;
-		/*height: 100%;*/
-		/*border: 1px solid white;*/
 		float: right;
 		padding: 20px;
-		/*background-color: rgba(255, 255, 255, 0.85);*/
 
 	}
 
@@ -236,7 +227,6 @@
 
 	.intro p {
 		font-family: 'Kaushan Script', cursive;
-		/*color: #f13c20;*/
 		font-size: 130%;
 	}
 
@@ -274,6 +264,8 @@
 		}
 		.content {
 			margin: 50px auto;
+			box-shadow: 0px 15px 20px 10px #efe2ba;
+
 		}
 
 	}
@@ -390,8 +382,6 @@
 	}
 
 	.toggleicon > i {
-	/*	height: 100%;
-		width: 100%;*/
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -400,7 +390,6 @@
 	}
 
 	.toggleicon {
-	/*	background-color: #5c2018;*/
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -412,7 +401,6 @@
 	}
 
 	.close {
-	/*	background-color: #5c2018;*/
 		position: absolute;
 		left: 64%;
 		right: 0;
@@ -421,7 +409,6 @@
 		top: 5%;
 		margin: 0 auto;
 		padding: 15px;
-		/*color: #d79922;*/
 		color: black;
 		font-size: 3em;
 		position: absolute;
@@ -434,7 +421,6 @@
 			width: 100%;
 			height: 10vh;
 	    	background-color: #efe2ba;
-			/*text-align: right;*/
 			background-image: url(../assets/img/ban.png);
 	   		 background-size: contain;
 			padding: 5px;
@@ -453,7 +439,6 @@
 			left: 87%;
 			top: 9%;
 			border-radius: 10%;
-			/*padding-top: 3%;*/
 			text-align: center;
 		}
 
@@ -462,15 +447,12 @@
 		}
 
 		.mobileNav > .toggle > i {
-			/*width:100%;*/
-			/*margin: 29% auto;*/
 			font-size: 140%;
 			margin-top: 25%;
 		}
 
 		.dropdownMenu {
 			width: 100%;
-			/*height: 35vh;*/
 			background-color: rgba(239, 226, 186, 0.5); 
 			position: fixed;
 			z-index: 10;
@@ -481,7 +463,6 @@
 
 		.dropdownMenu > a {
 			display: block;
-			/*border: 1px solid black;*/
 			padding: 2%;
 			background-color: #4056a1;
 			color: #d79922;
@@ -491,7 +472,6 @@
 		}
 		.dropdownMenu > a:hover {
 			display: block;
-			/*border: 1px solid black;*/
 			padding: 2%;
 			background-color: #d79922;
 			color: #4056a1;
@@ -543,6 +523,29 @@
 			height: 2px;
 		}
 
+	.profile {
+		width: 20vh;
+		height: 20vh;
+		border: 1px solid #4056a1;
+		background-image: url('../assets/img/profile.jpg');	
+		background-size: 100% 100%;
+		border-radius: 50%;
+		float: left;
+	}
+
+	/* Mobile Phone for About Page */
+	@media only screen and (max-width: 568px){
+		.profile {
+			width: 100%;
+			height: 40vh;
+			margin-bottom: 20px;
+		}
+		.aboutCont p {
+			font-size: 120%;
+		}
+
+	}
+
 	/*
 	* FestivalList Page
 	*/
@@ -551,8 +554,6 @@
 	.dropdown {
 		width: 100%;
 		height:15vh;
-		/*border: 2px solid black;*/
-		/*padding: 20px;*/
 	}
 
 	.festivalList,
@@ -560,8 +561,6 @@
 	.festivalList2 {
 		width: 100%;
 		height:80%;
-		/*border: 2px solid black;*/
-		/*text-align: center;*/
 		padding: 20px;
 		text-align: center;
 	}
@@ -590,8 +589,6 @@
 	.row2,
 	.row3 {
 		width: 100%;
-		/*height: 150px;*/
-		/*border: 2px solid black;*/
 		margin: 1%;
 		padding: 1%;
 		text-align: center;
@@ -681,16 +678,13 @@
 	}
 
 	.contMain {
-		/*height: 100%;*/
 		width: 100%;
-		/*border: 1px solid black;*/
 		padding: 20px;
 	}
 
 		.contMain .feastImg {
 			height: 35vh;
 			width: 50%;
-			/*border: 1px solid red;*/
 			float: left;
 			text-align: center;
 		}
@@ -706,7 +700,6 @@
 		.contMain .feastContent {
 			height: 100%;
 			width: 50%;
-			/*border: 1px solid red;*/
 			float: right;
 			padding-left: 20px;
 		}
@@ -723,9 +716,7 @@
 			}
 
 		.contMain .feastWhere {
-			/*height: 250px;*/
 			width: 50%;
-			/*border: 1px solid red;*/
 			float: left;
 		}
 
@@ -752,7 +743,6 @@
 		.contMain .feastContent,
 		.contMain .feastWhere {
 			width: 100%;
-			/*border: 2px solid black;*/
 		}
 	}
 
@@ -803,9 +793,7 @@
 	.myProfile,
 	.contactMe {
 		width: 50%;
-		/*height: 100%;*/
 		padding: 10px;
-		/*text-align: center;*/
 		color: white;
 		font-family: 'Righteous', cursive;
 

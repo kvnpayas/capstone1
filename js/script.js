@@ -1,4 +1,4 @@
-
+/* Navigation Desktop and Tablet Phone */
 var toggleIcon = document.querySelector('#toggleIcon');
 toggleIcon.addEventListener('click', function() {
 
@@ -25,6 +25,7 @@ close.addEventListener('click', function() {
 
 });
 
+/* Navigation Mobile Phone*/
 var toggle = document.querySelector('#toggle');
 toggle.addEventListener('click', function() {
 
@@ -57,7 +58,7 @@ toggle1.addEventListener('click', function() {
 
 });
 
-
+/* Bootstrap Carousel */
 $('section.awSlider .carousel').carousel({
 	pause: "hover",
   interval: 2000
@@ -72,7 +73,7 @@ $('section.awSlider .carousel').on('slid.bs.carousel', function () {
 });
 
 
-
+/* Footer Slide UP and Down*/
 $('body').on('click','#iconFooter',function(){
 	console.log('Working'); /* for debugging */
     if($('#footer').hasClass("visible"))
@@ -95,6 +96,7 @@ $('body').on('click','#iconFooter',function(){
     
 });
 
+/* Dropdown Island Select */
 $(document).on('change', '.islandSelect', function() {
   var target = $(this).data('target');
   var show = $("option:selected", this).data('show');

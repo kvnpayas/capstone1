@@ -24,13 +24,19 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 
+	<!-- Website Logo Icons -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
 </head>
 <body>
 
+	<!-- Header -->
 	<div class="outerCont" id="outerCont" hidden>
+
 		<div class="headerOuter" id="headerOuter" >
+
 			<div class="headerLogo"> </div>
-			<!-- <img src="assets/img/logo.png" class="log"> -->
+
 			<div class="cont">
 				<nav>
 					<ul>
@@ -40,37 +46,45 @@
 					</ul>
 				</nav>
 			</div>
+
 			<div class="close" id="close">
 				<i class="fa fa-times-circle" aria-hidden="true"></i>
 			</div>
-		</div>
-	</div>
-		<nav class="mobileNav">
+
+		</div><!-- headerOut -->
+
+	</div><!-- outerCpnt -->
+
+	<nav class="mobileNav">
 		<div class="toggle" id="toggle">
 			<i class="fa fa-bars" aria-hidden="true"></i>
 		</div>
 		<div class="toggle" id="toggle1" hidden>
 			<i class="fa fa-bars" aria-hidden="true"></i>
 		</div>
-	</nav>
+	</nav><!-- mobileNac -->
+
 	<div class="dropdownMenu" id="dropdownMenu" hidden>
-	    <a href="home.html">Home</a>
-    	<a href="festivalslist.html">List of Festivals</a>
-    	<a href="#contact">About</a>
+		<a href="home.html">Home</a>
+		<a href="festivalslist.html">List of Festivals</a>
+		<a href="#contact">About</a>
 	</div>
+
 	<nav class="navibar">
-
-			<div class="headerInner" id="headerInner">
-				<div class="toggleicon" id="toggleIcon">
-					<i class="fa fa-bars" aria-hidden="true"></i>
-				</div>
+		<div class="headerInner" id="headerInner">
+			<div class="toggleicon" id="toggleIcon">
+				<i class="fa fa-bars" aria-hidden="true"></i>
 			</div>
+		</div>
+	</nav><!-- navibar -->
 
-	</nav>
-
+	<!-- Main -->
 	<main class="wrapper">
+
 		<section class="content clear">
+
 			<div class="dropdown">
+
 				<div class="island">
 					<span>Please Choose Island: </span>
 					<select class="islandSelect" data-target=".targetdiv">
@@ -79,10 +93,12 @@
 						<option value="3" data-show=".festivalList2">Mindanao</option>
 					</select>
 				</div>
-			</div>
 
+			</div><!-- dropdown -->
+
+			<!-- Luzon Island -->
 			<div class="targetdiv">
-				<!-- Luzon Island -->
+
 				<div class="festivalList hide">
 					<h2>Some Popular Festivals in Luzon</h2>.
 					<div class="row1">
@@ -105,7 +121,8 @@
 							</li>
 
 						</ul>
-					</div>
+					</div><!-- row 1 -->
+
 					<div class="row1">
 						<ul>
 							<li>
@@ -126,13 +143,13 @@
 							</li>
 
 						</ul>
-					</div>
-				</div>
+					</div><!-- row1 -->
+
+				</div><!-- Festivalslist -->
 
 				<!-- Visayas Island -->
 				<div class="festivalList1 hide" >
 					<h2>Some Popular Festivals in Visayas</h2>.
-
 					<div class="row1">
 						<ul>
 							<li>
@@ -151,9 +168,9 @@
 								<img src="assets/img/ati.jpg">
 								<a href="festivals/dinagyang.html"><p>Ati-atihan Festival</p></a>
 							</li>
-
 						</ul>
-					</div>
+					</div><!-- row1 -->
+
 					<div class="row1">
 						<ul>
 							<li>
@@ -168,14 +185,14 @@
 								<img src="assets/img/pin.jpg">
 								<a href="festivals/dinagyang.html"><p>Pintados Festival</p></a>
 							</li>
-
 						</ul>
-					</div>
-				</div>
+					</div><!-- row1 -->
+
+				</div><!-- festivalslist2 -->
 
 				<!-- Mindanao Island -->
 				<div class="festivalList2 hide" >
-					<h2>Some Popular Festivals in Mindanao</h2>.
+					<h2>Some Popular Festivals in Mindanao</h2>
 					<div class="row1">
 						<ul>
 							<li>
@@ -196,13 +213,13 @@
 							</li>
 
 						</ul>
-					</div>
-				</div>
-			</div>
+					</div><!-- row1 -->
 
-		</section>
+				</div><!-- festivalslist2 -->
 
+			</div><!-- targetdiv -->
 
+		</section><!-- content -->
 
 	</main> <!-- Wrapper -->
 
